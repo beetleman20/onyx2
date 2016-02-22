@@ -1,0 +1,93 @@
+\documentclass[12pt, a4paper, oneside]{article}
+
+\usepackage[a4paper]{geometry}
+\geometry{verbose,tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in}
+
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{lastpage}
+\usepackage{setspace}
+\usepackage{fancyhdr}
+\setlength{\headheight}{15.2pt}
+\pagestyle{fancy}
+\lhead{Group: 35}
+\chead{Onyx - cloud music library manager\\Design Brief \& Specification}
+\rhead{Date Revised:\\ \today}
+\cfoot{Page \thepage\ of \pageref{LastPage}}
+
+\newcommand{\env}[2]{\begin{#1}#2\end{#1}}
+
+\begin{document}
+\setcounter{page}{0}
+\thispagestyle{empty}
+
+\begin{center} \*\\
+    \vspace{40mm}
+    {\Large The Chinese University of Hong Kong\\Department of Computer Science and Engineering} \\ %School
+    \vspace{20mm}
+    \hfill \\
+    {\Huge Onyx - cloud music library manager} \\ %Heading
+    \vspace{8mm}
+    {\Large Design Brief \& Specification} \\ %Sub-Heading
+    \vspace{20mm} 
+\end{center}
+
+\begin{minipage}{0.5\textwidth} %Title page left
+    \begin{flushleft} \large
+
+        \emph{Group 35 Members:}\\
+        Boris Yau (1155040871)\\
+        Fan Wai Keung (1155047303)\\
+        FAN Sin Tat (1155047763)\\
+        Li Bochao (1155043299)\\
+        Tse Cheung Yuet (1155049118)
+        \vspace{8mm}
+
+    \end{flushleft}
+\end{minipage}
+\begin{minipage}{0.4\textwidth} %Title page right
+    \begin{flushright} \large
+
+        \emph{Literature Number:} \\
+        DS0001a \vspace{8mm}
+
+        \emph{Date Revised:} \\
+        \today \vspace{8mm}
+
+    \end{flushright}
+\end{minipage}
+
+\newpage
+\tableofcontents % Table of Contents
+
+\newpage
+\section{Design Brief}
+\subsection{Rationale}
+\subsection{Project Overview}
+\subsection{Onyx Features}
+\env{itemize}{
+\item Access all music on any device
+\item Zero compression, lossless fidelity
+\item Gapless playback for non-stop mixes
+\item Designed to handle large libraries ($>$ 10,000 songs)
+\item Powerful search engine to rediscover music
+\item Discover music beyond personal library (Music Pool)
+}
+
+\section{Specification}
+\subsection{System Architecture}
+\subsection{Module Description}
+\subsection{Employed Technologies}
+\env{itemize}{
+\item NodeJS - Server Runtime
+\item Forage - Search Engine
+\item Redis - Data Store
+\item npm - Dependency Manager
+\item Webpack - Module Bundler
+\item React - UI Framework
+\item Concise - CSS Framework
+\item Font Awesome - Icons
+}
+
+\end{document}
