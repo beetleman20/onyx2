@@ -1,0 +1,12 @@
+{
+    "name": "onyx2",
+    "version": "1.0.0",
+    "script": {
+        "start": "node main.js"
+    },
+    "dependencies": {
+        "nedb": "^1.8.0",
+        "norch": "^0.6.0",
+        "fluent-ffmpeg": "^2.0.0"
+    }
+}
